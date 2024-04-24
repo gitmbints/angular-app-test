@@ -1,12 +1,7 @@
-<h1>Angular Component Lifecycle Hook</h1>
+<h1>Custom Class & Style Directive</h1>
 
-<div class="container">
-  <input type="text" #inputEl />
-  <button (click)="onBtnClicked(inputEl)">Submit</button>
-
-  <app-demo *ngIf="!toDestroy" [message]="inputVal">
-    <p #temp>User has entered following text: {{ inputVal }}</p>
-  </app-demo>
-  <br> <br>
-  <button (click)="destroyComponent()">Show/Hide</button>
+<div>
+  <p [appClass]="{'app-container': true, appHighlight: true, 'app-font': false}">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officiis tempore laboriosam exercitationem iusto laudantium, neque eveniet, esse consectetur quibusdam ratione, nihil assumenda suscipit blanditiis explicabo repellendus fugiat cupiditate doloremque.
+  </p>
 </div>
